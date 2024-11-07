@@ -1,0 +1,145 @@
+* {
+    font-family: "Host Grotesk";
+    font-size: 1rem;
+}
+
+@keyframes show {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+body {
+    margin: 0;
+}
+
+h1#company-name {
+    font-family: "Prosto One";
+    color: #FF0000;
+    font-size: 2rem;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #111;
+    height: 80px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 40px;
+    background-color: #222;
+}
+
+a.nav-button {
+    display: inline-block;
+    margin: auto;
+    width: 15%;
+    line-height: 35px;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    transition: background-color 0.5s;
+    color: #555;
+    margin: 0;
+}
+
+a.nav-button:hover {
+    transition: background-color 0.5s;
+    background-color: #777;
+}
+
+a.nav-button:active {
+    background-color: #AAA;
+}
+
+main {
+    animation-name: show;
+    animation-duration: 3s;
+}
+
+h2.topic-heading-left {
+    text-shadow: 1px 1px 4px black;
+    display: inline-block;
+    color: #FFF;
+    position: absolute;
+    margin: 0;
+    padding: 20px;
+    left: px;
+    z-index: 1;
+    font-size: 2rem;
+}
+
+div.slogan-card {
+    text-align: center;
+    height: 250px;
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+img.slogan-car-photo {
+    display: inline-block;
+    object-fit: cover;
+    position: relative;
+    height: 100%;
+}
+
+div.slogan-cards {
+    display: flex;
+    flex-direction: row;
+
+}
+
+div.text-content {
+    padding: 0px 30% 0px 30%;
+}
+
+h2.text-heading {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+p.text-content {
+    font-size: 1rem;
+    text-align: center;
+}
+
+footer {
+    margin-top: 100px;
+    text-align: center;
+}
+
+p.footer-text {
+    line-height: 2px;
+    font-size: 1rem;
+    color: #AAA;
+}
+
+@media only screen and (orientation: portrait) {
+    div.slogan-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.slogan-card {
+        width: 100%;
+    }
+
+    a.nav-button {
+        width: 33.33%;
+    }
+
+    div.text-content {
+        padding: 0px 30px 0px 30px;
+    }
+
+    p.text-content {
+        text-align: left;
+    }
+}
+
